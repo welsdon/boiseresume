@@ -98,7 +98,7 @@
 % Contact Information
 \newcommand{\nametitle}[2]{%
     { \Huge #1 \textsc{#2} }
-
+    
     \medskip
 }
 \newcommand{\contactseparator}{
@@ -111,9 +111,12 @@
 \newcommand{\location}[1]{\faIcon{map-marker-alt} #1}
 % Experience/Achievements
 \newcommand{\tech}[1]{\textbf{#1}}
+\newcommand{\boldit}[1]{\textbf{\emph{#1}}}
 \newcommand{\role}[2]{\textbf{#2 | \emph{#1}}}
+\newcommand{\roled}[1]{\textbf{\emph{#1}}}
 \newcommand{\subrole}[4]{\emph{#1 (#2 - #3)} #4}
 \newcommand{\tenure}[2]{\textsc{#1} - \textsc{#2}}
+\newcommand{\tenured}[2]{\textsc{#1}}
 \newcommand{\achievement}[1]{%
     \begin{itemize}
         \small{\item #1}
@@ -124,7 +127,11 @@
     #5
     \vspace{7pt}
 }
-
+\newcommand{\education}[5]{%
+    \noindent\role{#1}{#2}\hfill\tenured{#3}\par
+    #4
+    \vspace{7pt}
+}
 %% ----- Four Required Configurations -----
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 \setlength{\textwidth}{7.5in}
