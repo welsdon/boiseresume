@@ -33,38 +33,36 @@
 ]{
     \begin{Center}
         \covername{\commandkey{firstname}}{\ifcommandkey{middleinitial}{\commandkey{middleinitial}. }{}\commandkey{lastname}}
-        %\rule{\linewidth}{0.5pt}
         \hrule
-        %\vspace{0.3\baselineskip}
         {%
             \ifcommandkey{email}%
             {%
                 \email{\commandkey{email}}%
-                \ifcommandkey{phone}{\contactseparator}%
-                {\ifcommandkey{linkedin}{\contactseparator}%
-                    {\ifcommandkey{github}{\contactseparator}%
-                        {\ifcommandkey{state}{\contactseparator}{}}}}%
+                \ifcommandkey{phone}{\contactseparatorcoverletter}%
+                {\ifcommandkey{linkedin}{\contactseparatorcoverletter}%
+                    {\ifcommandkey{github}{\contactseparatorcoverletter}%
+                        {\ifcommandkey{state}{\contactseparatorcoverletter}{}}}}%
             }%
             {}%
             \ifcommandkey{phone}%
             {%
                 \phone{\commandkey{phone}}%
-                \ifcommandkey{linkedin}{\contactseparator}%
-                {\ifcommandkey{github}{\contactseparator}%
-                    {\ifcommandkey{state}{\contactseparator}{}}}%
+                \ifcommandkey{linkedin}{\contactseparatorcoverletter}%
+                {\ifcommandkey{github}{\contactseparatorcoverletter}%
+                    {\ifcommandkey{state}{\contactseparatorcoverletter}{}}}%
             }%
             {}%
             \ifcommandkey{linkedin}%
             {%
                 \linkedin{\commandkey{linkedin}}%
-                \ifcommandkey{github}{\contactseparator}%
-                {\ifcommandkey{state}{\contactseparator}{}}%
+                \ifcommandkey{github}{\contactseparatorcoverletter}%
+                {\ifcommandkey{state}{\contactseparatorcoverletter}{}}%
             }%
             {}%
             \ifcommandkey{github}%
             {%
                 \github{\commandkey{github}}%
-                \ifcommandkey{state}{\contactseparator}{}%
+                \ifcommandkey{state}{\contactseparatorcoverletter}{}%
             }%
             {}%
             \ifcommandkey{state}%

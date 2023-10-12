@@ -96,20 +96,25 @@
 
 %% ----- Custom Commands -----
 % Contact Information
+% Use for Resume Title
 \newcommand{\nametitle}[2]{
-    { \Huge #1 \textsc{#2} }
+    { \Huge\textsc{#1} \textsc{#2} }
     
     \medskip
 }
 
+% Use for cover letter, makes spacing more appealing
 \newcommand{\covername}[2]{
-    { \Huge #1 \textsc{#2} }
+    { \Huge\textsc{#1} \textsc{#2} }
     
     \vspace{1\baselineskip}
 }
 
 \newcommand{\contactseparator}{
     \quad\textbar\quad\hspace{1pt}
+}
+\newcommand{\contactseparatorcoverletter}{
+    \;\textbar\;\hspace{1pt}
 }
 \newcommand{\email}[1]{\faIcon{envelope} \href{mailto:#1}{#1}}
 \newcommand{\phone}[1]{\faIcon{phone-alt} \href{tel:+1-#1}{#1}}
