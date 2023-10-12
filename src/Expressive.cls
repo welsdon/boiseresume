@@ -39,10 +39,10 @@
 \RequirePackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.0,0.0}
 \hypersetup{
-  colorlinks,
-  breaklinks,
-  urlcolor=linkcolour,  % Color them black
-  linkcolor=linkcolour  % Color them black
+    colorlinks,
+    breaklinks,
+    urlcolor=linkcolour,  % Color them black
+    linkcolor=linkcolour  % Color them black
 }
 
 %% Add support for nuanced list formatting
@@ -96,13 +96,20 @@
 
 %% ----- Custom Commands -----
 % Contact Information
-\newcommand{\nametitle}[2]{%
-  { \Huge #1 \textsc{#2} }
-  
-  \medskip
+\newcommand{\nametitle}[2]{
+    { \Huge #1 \textsc{#2} }
+    
+    \medskip
 }
+
+\newcommand{\covername}[2]{
+    { \Huge #1 \textsc{#2} }
+    
+    \vspace{1\baselineskip}
+}
+
 \newcommand{\contactseparator}{
-  \quad\textbar\quad\hspace{1pt}
+    \quad\textbar\quad\hspace{1pt}
 }
 \newcommand{\email}[1]{\faIcon{envelope} \href{mailto:#1}{#1}}
 \newcommand{\phone}[1]{\faIcon{phone-alt} \href{tel:+1-#1}{#1}}
@@ -118,19 +125,19 @@
 \newcommand{\tenure}[2]{\textsc{#1} - \textsc{#2}}
 \newcommand{\tenured}[2]{\textsc{#1}}
 \newcommand{\achievement}[1]{%
-  \begin{itemize}
-    \small{\item #1}
-  \end{itemize}
+    \begin{itemize}
+        \small{\item #1}
+    \end{itemize}
 }
 \newcommand{\experience}[5]{%
-  \noindent\role{#1}{#2}\hfill\tenure{#3}{#4}\par
-  #5
-  \vspace{7pt}
+    \noindent\role{#1}{#2}\hfill\tenure{#3}{#4}\par
+    #5
+    \vspace{7pt}
 }
 \newcommand{\education}[5]{%
-  \noindent\role{#1}{#2}\hfill\tenured{#3}\par
-  #4
-  \vspace{7pt}
+    \noindent\role{#1}{#2}\hfill\tenured{#3}\par
+    #4
+    \vspace{7pt}
 }
 %% ----- Four Required Configurations -----
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
